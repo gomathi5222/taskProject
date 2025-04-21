@@ -22,9 +22,9 @@ export class BookFinderComponent implements OnInit {
   searchBook(keyword: any) {
     console.log(keyword);
     this.bookService.getBook(keyword).subscribe((res) => {
-      // console.log(res);
+      console.log(res.docs);
       this.searchResult = res.docs;
-      console.log(this.searchResult);
+      // console.log(this.searchResult);
     })
   }
 }
