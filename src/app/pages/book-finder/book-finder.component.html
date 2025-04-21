@@ -1,0 +1,10 @@
+<app-layout></app-layout>
+<div class="col-lg-6 col-md-12">
+  <form [formGroup]="bookForm" class="mb-3">
+    <input type="text" formControlName="keyword" />
+
+    <button type="submit" (click)="searchBook(bookForm.value.keyword)">
+      Search
+    </button>
+  </form>
+</div>
